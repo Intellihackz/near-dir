@@ -1,8 +1,12 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Comic_Neue } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+const comicSans = Comic_Neue({ 
+  weight: ['400', '700'],
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
   title: 'NEAR Project Directory',
@@ -16,8 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="dark">
-      <body className={inter.className}>{children}</body>
+      <body className={comicSans.className}>{children}</body>
     </html>
   )
 }
-
