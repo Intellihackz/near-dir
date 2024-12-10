@@ -26,6 +26,7 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-background text-foreground p-8">
+    <a href="https://github.com/intelliHackz/near-dir" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">github link</a>
       <h1 className="text-4xl font-bold text-center mb-8">NEAR Ecosystem Directory</h1>
       <p className="text-center mb-4">
         built by <a href="https://x.com/zephyrdev_" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Zephyr</a>
